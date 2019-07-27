@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  python:
+    build: .
+    command: 'sleep 9999999'
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./:/code
